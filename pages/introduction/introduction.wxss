@@ -1,0 +1,56 @@
+page{
+  width: 100%;
+  height: 100%;
+}
+.intro-container{
+  background: url('https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/shouyebg.png') no-repeat center;
+  background-size: 100% 100%;
+  height: 100%;
+  width: 100%;
+}
+.intro-bg{
+  background: url('https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/passBG.png') no-repeat center;
+  background-size: 100% 100%;
+  width: 676rpx;
+  height: 1036rpx;
+  margin-left: 57rpx;
+}
+.intro-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding-top: 291rpx;
+}
+.intro-number{
+  background: url('https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/introText.png') no-repeat center;
+  background-size: 100% 100%;
+  width: 208rpx;
+  height: 51rpx;
+  margin-bottom: 44rpx;
+}
+.intro-title{
+  font-family: 'PingFang-SC-Bold';
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #323232;
+  margin-bottom: 55rpx;
+  width: 499rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.intro-item{
+  font-size: 30rpx;
+  margin-bottom: 58rpx;
+  width: 499rpx;
+  color: #ff5e2f;
+}
+.to-task{
+  background: url('https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/toTask.png') no-repeat center;
+  background-size: 100% 100%;
+  height: 80rpx;
+  width: 310rpx;
+  border: 0;
+  outline: none;
+}

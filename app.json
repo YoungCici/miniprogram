@@ -1,0 +1,19 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/pass/pass",
+    "pages/resultHZ/resultHZ",
+    "pages/passHZ/passHZ",
+    "pages/result/result",
+    "pages/introduction/introduction",
+    "pages/logs/logs"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "护考帮帮帮",
+    "navigationBarTextStyle":"black"
+  },
+  "requiredBackgroundModes": ["audio"]
+}

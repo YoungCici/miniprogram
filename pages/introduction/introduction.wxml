@@ -1,0 +1,20 @@
+<view class='intro-container'>
+  <view class='intro-bg'>
+    <view class='intro-card'>
+      <view class='intro-number'></view>
+      <text class='intro-title'>
+        1.本试卷将决定您是否能通过护考
+      </text>
+      <text class='intro-title'>
+        2.满分100分
+      </text>
+      <text class='intro-title'>
+        3.考试时间5分钟
+      </text>
+      <text class='intro-item'>
+        本试卷包含内外妇儿基本人文等相关试题，严格遵守2019护士资格考纲编排，请仔细答题。
+      </text>
+      <view class='to-task' bindtap='toTask'></view>
+    </view>
+  </view>
+</view>

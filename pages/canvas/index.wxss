@@ -1,0 +1,4 @@
+.myCanvas{
+  width: 700rpx;
+  height: 100%;
+}

@@ -1,0 +1,8 @@
+<!--pages/shouye/index.wxml-->
+<view class='sy_bg'>
+  <view class='sy_titleimg'></view>
+  <view class='passageway'>
+    <button class='bottomOne' type='' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="toKSTD"></button>
+    <button class='bottomTow' type='' open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="toHZKS"></button>
+  </view>
+</view>

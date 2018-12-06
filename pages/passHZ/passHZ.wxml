@@ -1,0 +1,102 @@
+<view class='passHZ-container'>
+  <view class='passHZ-bg'>
+    <view class='passHZ-card'>
+      <view class='passHZ-number' style='background-image:url("https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/passHZ{{passImg}}.png")'></view>
+      <view class='passHZ-view-title'>
+        <view class='passHZ-title'>
+          {{title}}
+        </view>
+      </view>
+      <!-- <block wx:for='{{answers}}' wx:for-item='answer' wx:for-index='index'>
+        <view class='passHZ-item' data-info='{{answer.id}}' bindtap='passRight' style='color: {{key == index ? color_ : ""}}'>{{answer.label}}.{{answer.content}}
+        </view>
+      </block> -->
+
+      <view id='{{postList[index].answers[0].id}}' class="passHZ-item" bindtap="passRight" style="color: {{bcA}};">{{postList[index].answers[0].label}}.{{postList[index].answers[0].content}}</view>
+
+  <view id='{{postList[index].answers[1].id}}' class="passHZ-item" bindtap="passRight" style="color: {{bcB}};">{{postList[index].answers[1].label}}.{{postList[index].answers[1].content}}</view>
+
+  <view id='{{postList[index].answers[2].id}}' class="passHZ-item" bindtap="passRight" style="color: {{bcC}};">{{postList[index].answers[2].label}}.{{postList[index].answers[2].content}}</view>
+
+  <view id='{{postList[index].answers[3].id}}' class="passHZ-item" bindtap="passRight" style="color: {{bcD}};">{{postList[index].answers[3].label}}.{{postList[index].answers[3].content}}</view>
+
+  <view id='{{postList[index].answers[4].id}}' class="passHZ-item" bindtap="passRight" style="color: {{bcE}};">{{postList[index].answers[4].label}}.{{postList[index].answers[4].content}}</view>
+
+    </view>
+  </view>
+</view>
+<!-- 回答错误tips -->
+<!--components/Dialog/dialog.wxml-->
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+    <view class='wx-mask'></view>
+    <view class='wx-dialog'>
+        <view class='wx-dialog-content'>
+          <text class='textTips'>{{ content }}</text>
+           <view class='tipsSign'></view>
+           <text class='jiexitext'>{{analysis}}</text>
+           <text class='answer'>{{answer}}</text>
+           <view class='znawei'></view>
+          <view class='wx-dialog-footer'>
+            <view class='wx-dialog-btn wx-next-btn' style="background-image:url('{{nextBG}}')" catchtap='_confirmEvent'></view>
+        </view>
+        </view>
+    </view>
+</view>
+
+
+<!-- 分享成功之后tips -->
+<view class='wx_dialog_container' hidden="{{!isShowsx}}">
+    <view class='wx-mask'></view>
+    <view class='wx-dialog'>
+        <view class='wx-dialog-content'>
+          <text class='textTips'>好友已帮你解答成功继续闯关吧!</text>
+           <view class='tipsSign'></view>
+           <text class='jiexitext'>{{analysis}}</text>
+           <text class='answer'>{{answer}}</text>
+           <view class='znawei'></view>
+          <view class='wx-dialog-footer'>
+            <view class='wx-dialog-btn wx-next-btn' style="background-image:url('{{nextBG}}')" catchtap='_confirmEventsx'></view>
+        </view>
+        </view>
+    </view>
+</view>
+
+
+<!-- 回答错误tips -->
+<!--components/Dialog/dialog.wxml-->
+<view class='wx_dialog_containererr' hidden="{{!isShowerr}}">
+    <view class='wx-maskerr'></view>
+    <view class='wx-dialogerr'>
+        <view class='wx-dialog-contenterr'>
+          <text class='textTipserr'>哎呀，答错了耶!</text>
+          <!-- style="background:{{viewBg}}; -->
+          <view style="background-image:url('{{coatFatThinColor}}')"  class='tipsSignerr'></view>
+          <view class='wx-dialog-footererr'>
+            <button  open-type='share' class='wx-dialog-btnerr wx-dialog-btn1err'></button>
+            <!-- <view class='' 'catchtap='_cancelEventShare></view> -->
+            <view style="background-image:url('{{err_ten}}')" class='wx-dialog-btnerr wx-dialog-btn2err' catchtap='_confirmEventShare'></view>
+        </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+<!-- 回答错误tips 只有分享到群 -->
+<!--components/Dialog/dialog.wxml-->
+<view class='wx_dialog_containererr' hidden="{{!isShowerrqun}}">
+    <view class='wx-maskerr'></view>
+    <view class='wx-dialogerr'>
+        <view class='wx-dialog-contenterr'>
+          <text class='textTipserr textTipserr1'>只有分享到群才能知道正确答案哟</text>
+          <!-- style="background:{{viewBg}}; -->
+          <view style="background-image:url('{{coatFatThinColor}}')"  class='tipsSignerr'></view>
+          <view class='wx-dialog-footererr'>
+            <button open-type='share' class='wx-dialog-btnerr wx-dialog-btn1errq'></button>
+            <!-- <view class='' 'catchtap='_cancelEventShare></view> -->
+            <view style="background-image:url('{{err_ten}}')" class='wx-dialog-btnerr wx-dialog-btn2err' catchtap='_confirmEventSharequn'></view>
+        </view>
+        </view>
+    </view>
+</view>

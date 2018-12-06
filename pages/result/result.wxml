@@ -1,0 +1,36 @@
+<view class='result-container'>
+  <text class='result-title'>{{resText}}</text>
+  <view class='result-core'>
+    <view class='core-title'></view>
+
+    <view class='core-item'>
+    <block wx:for="{{one_2}}" wx:key="index">
+      <view class='img-view' id='{{index+1}}' data-in='use_sc2' style='background-image:url("{{start1}}")'></view>
+    </block>
+    <block wx:for="{{two_2}}" wx:key="index">
+      <view class='img-view' id='{{index+1}}' data-in='use_sc' style='background-image:url("{{start0}}")'></view>
+    </block>
+    </view>
+  </view>
+  <view class='result-btn1'>
+    <button class='restart' bindtap='toRestart'></button>
+    <button class='to-share' open-type='share' title='分享转发的标题' hover-class='none'></button>
+  </view>
+  <view class='result-btn2' bindtap='toHZKS'></view>
+</view>
+
+
+
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+    <view class='wx-mask'></view>
+    <view class='wx-dialog'>
+        <view class='wx-dialog-content'>
+          <text class='textTips'>分享成功</text>
+           <view class='tipsSign'></view>
+           <view class='znawei'></view>
+          <view class='wx-dialog-footer'>
+            <view class='wx-dialog-btn wx-next-btn'  catchtap='shareoff'></view>
+        </view>
+        </view>
+    </view>
+</view>

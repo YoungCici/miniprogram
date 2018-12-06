@@ -1,0 +1,42 @@
+/* pages/shouye/index.wxss */
+/* pages/shoye/shouye.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.sy_bg{
+  width: 100%;
+  height: 100%;
+  background: url('https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/shouyebg.png');
+  background-size: 100% 100%;
+}
+.sy_titleimg{
+  width: 595rpx;
+  height: 716rpx;
+  background-image: url('https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/title_img.png');
+  background-size: cover;
+  /* margin: 50rpx 78rpx; */
+  margin: auto;
+}
+.passageway{
+  width: 504rpx;
+  height: 260rpx;
+  margin: 79rpx 123rpx;
+}
+.bottomOne{
+  width: 100%;
+  height: 130rpx;
+  border-radius: 50px;
+  background-image: url('https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/hkpassageway.png');
+  background-size: 100% 100%;
+}
+.bottomTow{
+  width: 100%;
+  height: 130rpx;
+  border-radius: 50px;
+  background-image: url('https://yhzj.oss-cn-shanghai.aliyuncs.com/xiaochengxu/hzpassageway.png');
+  background-size: 100% 100%;
+  margin-top: 50rpx;
+}
+
+

@@ -1,0 +1,54 @@
+<view class='resultHZ-container' hidden='{{}}'>
+  <view class='resultHZ-person'>
+    <view class='resultHZ-title'>
+      <image class='person-title' src='{{avatarUrl}}'></image>
+      <view class='person-item'>{{nickName}}</view>
+    </view>
+    <view class='page-hz-title'>2019护考成绩单</view>
+    <view class='page-hz-subTitle'>
+      <view class='sw-word'>专业实务</view>
+      <view class='sj-word'>实践能力</view>
+    </view>
+    <view class='page-hz-score'>
+      <view class='sw-score'>{{swScore}}</view>
+      <view class='sj-score'>{{sjScore}}</view>
+    </view>
+    <view class='page-hz-content'>
+      <view class='content-title'>专家说:</view>
+      <view class='content-word'>
+        {{contentWord}}
+      </view>
+    </view>
+  </view>
+  <view class='resultHZ-btn1'>
+    <button class='restart' bindtap='toRestart'></button>
+    <button class='to-share' open-type='share' hover-class='none'></button>
+  </view>
+  <view class='resultHZ-btn2' bindtap='textToImg'></view>
+  <!-- <canvas style='width: 750rpx;height: 1198rpx;' class='canvas-container' canvas-id='myCanvas'></canvas> -->
+</view>
+
+
+<!-- hidden='{{!saveShow}}' -->
+<view class='canvasBox' hidden='{{!saveShow}}'>
+  <!-- <canvas style="width: 65px; height: 65px;" canvas-id="firstCanvas" class='firstCanvas'></canvas> -->
+  <!-- <canvas style="width:{{canvasWidth}}px; height:{{canvasHeight}}px" canvas-id="myCanvas" class='myCanvas'></canvas> -->
+  <canvas style="width:{{canvasWidth}}px; height:{{canvasHeight}}px" canvas-id="myCanvas" class='myCanvas'></canvas>
+  <view class='btnsave'>
+    <button class='btnsave-btn' bindtap='saveup' type="" size='mini'>关闭</button>
+  </view>
+</view>
+
+<view class='wx_dialog_container' hidden="{{!isShow}}">
+    <view class='wx-mask'></view>
+    <view class='wx-dialog'>
+        <view class='wx-dialog-content'>
+          <text class='textTips'>分享成功</text>
+           <view class='tipsSign'></view>
+           <view class='znawei'></view>
+          <view class='wx-dialog-footer'>
+            <view class='wx-dialog-btn wx-next-btn'  catchtap='shareoff'></view>
+        </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,9 @@
+<!-- hidden='{{!saveShow}}' -->
+<view class='canvasBox' hidden='{{}}'>
+  <!-- <canvas style="width: 65px; height: 65px;" canvas-id="firstCanvas" class='firstCanvas'></canvas> -->
+  <!-- <canvas style="width:{{canvasWidth}}px; height:{{canvasHeight}}px" canvas-id="myCanvas" class='myCanvas'></canvas> -->
+  <canvas  canvas-id="myCanvas" class='myCanvas'></canvas>
+  <view class='btnsave'>
+    <!-- <button class='btnsave-btn' bindtap='saveup' type="" size='mini'>关闭</button> -->
+  </view>
+</view>
